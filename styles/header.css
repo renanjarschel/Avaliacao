@@ -15,6 +15,10 @@
     position: relative
 
 }
+.logo__costa{
+    width: 44px;
+    height: 44px;
+}
 .container{
     display: flex;
     align-items: center;
@@ -29,4 +33,25 @@
     top: 100%;
     background-color: var(--branco);
 
+}
+.container__botao{
+    display: none;
+}
+.container__botao:checked~ .lista-menu{
+    display: block;
+}
+.lista-menu__titulo{
+    color: var(--amarelo);
+}
+
+.lista-menu__item{
+    background: var(--roxo-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+.lista-menu__titulp, .lista-menu__item{
+    padding: lem;
+    background-color: var(--branco);
 }
