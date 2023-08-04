@@ -6,7 +6,16 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+.cabecalho__menu-hamburguer{
+    display: none;
 
+}
+@media screen and (min-width: 1024px) {
+    .cabecalho__menu-hamburguer{
+        font-size: 30px;
+        display: block;
+    }
+}
 .cabecalho{
     background-color: var(--branco);
     display: flex;
@@ -50,8 +59,21 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
+
 }
-.lista-menu__titulp, .lista-menu__item{
+.lista-menu__titulo, .lista-menu__item{
     padding: lem;
     background-color: var(--branco);
+
+}
+.titulo__cabecalho{
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    .titulo__cabecalho{
+        font-size: 30px;
+        color: rgb(170, 58, 151);
+        display: block;
+    }
+    
 }
